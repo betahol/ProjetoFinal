@@ -9,12 +9,15 @@ body {
 }
 
 main {
-    width: 100;
-    max-width: 40rem;
+    width: 100%;
+    max-width: 80rem;
     margin: 0 auto;
 }
 
-.barra-navegacao {
+.barra-navegacao >div {
+    width: 100%;
+    max-width: 80rem;
+    margin: 0 auto;
     padding: 24px 48px;
     display: flex;
     justify-content: space-between;
@@ -33,6 +36,65 @@ main {
 }
 
 .home{
+    padding-top: 64px;
     display: grid;
+    gap: 32px;
     grid-template-columns: 1fr 1fr;
+}
+
+.home h2{
+    font-size: 72px;
+    margin-bottom: 16px;
+}
+
+.home p {
+    font-size: 16px;
+    margin-bottom: 16px;
+
+}
+
+.home button {
+    font-weight: bold;
+    padding: 8 px 32px;
+    border: none;
+    border-radius: 999px;
+    background: rgb(233, 154, 209);
+}
+
+.home__imagem {
+    border: 1px solid red;
+    width: 100%;
+    aspect-ratio: 16/9;    
+}
+
+.home__imagem img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+}
+
+.sobre {
+    padding-top: 32px;
+}
+
+.sobre h2{
+    font-size: 48px;
+    margin-bottom: 32px;
+}
+
+.sobre > div{
+    display: flex;
+    gap: 16px;
+}
+
+.sobre__card{
+    background: rgb(233, 154, 209);
+    border-radius: 16px;
+    padding: 16px;
+    aspect-ratio: 1/1;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 8px;
 }
